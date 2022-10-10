@@ -1,12 +1,15 @@
 import './App.css';
 import Search from "./containers/Search"
+import Found from './containers/Found';
+import {UseProvider} from './components/context';
 
 
 function App() {
   return (
-    <div className="App">
-    <Search />
-    </div>
+    <UseProvider>
+      <Search />
+      <Found/>
+    </UseProvider>
   );
 }
 

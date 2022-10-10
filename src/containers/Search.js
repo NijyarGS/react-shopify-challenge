@@ -1,11 +1,11 @@
-// import FetchData from "../components/FetchData"
+import FetchData from "../components/FetchData"
 import React, { useCallback } from "react"
 
 export default function Search(){
 
-    const MovieBeinSearched = useCallback((e) => {
-        console.log(e.target.value)
-
+    const MovieBeinSearched = useCallback((elem) => {
+        console.log(elem.target.value)
+        FetchData(elem.target.value)
     })
 
     return(
